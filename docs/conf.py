@@ -19,17 +19,18 @@ import shlex
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-absolute_path = os.environ.get('PYFL_PATH')
+# absolute_path = os.environ.get('PYFL_PATH')
 
-if absolute_path:
-  sys.path.insert(0, os.path.abspath(absolute_path))
-  print 'Setting path to %s to' % absolute_path
-else:
-  sys.path.insert(0, os.path.abspath("."))
-  print 'No path set; using default...'
+# if absolute_path:
+#   sys.path.insert(0, os.path.abspath(absolute_path))
+#   print 'Setting path to %s to' % absolute_path
+# else:
+#   sys.path.insert(0, os.path.abspath("."))
+#   print 'No path set; using default...'
 
+
+sys.path.insert(0, os.path.abspath('.'))
 import PyFL
-print PyFL
 
 # -- General configuration ------------------------------------------------
 

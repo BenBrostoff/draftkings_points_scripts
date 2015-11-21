@@ -25,9 +25,11 @@ if absolute_path:
   sys.path.insert(0, os.path.abspath(absolute_path))
   print 'Setting path to %s to' % absolute_path
 else:
-  print 'No path set; using docs for latest...'
+  sys.path.insert(0, os.path.abspath("."))
+  print 'No path set; using default...'
 
 import PyFL
+print PyFL
 
 # -- General configuration ------------------------------------------------
 
